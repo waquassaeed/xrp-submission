@@ -2,11 +2,13 @@
 
 The package includes a python script for calling rippled's server_info command along with a text file for plotting the graph using the gnuplot program. The output result set is stored in two different files: data.csv stores data being captured through server_info and dataplot.csv is being used for plotting the data point. 
 
+
 **Script Files:** xrpcode.py and xrpgnuplot.text
 
 **Output Files:** data.csv and dataplot.csv
 
 **Graph Image:** graph.png file for showing data points
+
 
 
 **1. How does your script work?**
@@ -29,6 +31,7 @@ The results show how many transactions are submitted in the ledger over time bas
 **4. Whatmight explain the variation in time between new ledgers?**
 
 XRP Ledger is a decentralized network creating a peer to peer transaction model where a transaction is validated based on the general rules. This has brought a concept of consensus problem where a vast majority is agreed to accept a value that is required in order to make system fault-tolerant. A similar concept is being used in XRP Ledger which ensures that participant can submit their transaction and can be validated based on the consensus rule and principles with a majority of votes to become the part of the validated ledger on the network. If we look at the data being received by server_info command, it is clearly stated that each validated sequence is a block or set of transactions were submitted and were available for consensus rounds by the participants and validators who were going to validate all transaction or a group of transactions to make them available as a validated ledger. This requires connected peers to work on the computation model that takes time in accepting, agreeing, and validating the block into the rippled database and due to that, every ledger sequence is timely varied with a few seconds.
+
 
 
 **Bonus questions # 1**
