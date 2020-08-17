@@ -1,0 +1,8 @@
+set xdata time                                
+set timefmt "%H:%M:%S"                        
+set format y "%6.0f"                    
+set datafile separator ','
+set xlabel "Time"
+set ylabel "Sequence"
+set title "Ledger Sequence over Time Graph"                   
+plot 'E:\dataplot.csv' using 1:2 with linespoints
