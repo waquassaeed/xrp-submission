@@ -1,4 +1,5 @@
 #IE Tech Challenge Submission
+
 The package includes a python script for calling rippled's server_info command along with a text file for plotting the graph using the gnuplot program. The output result set is stored in two different files - data.csv stores data being captured through server_info and dataplot.csv is being used for plotting the data point. 
 Script Files: xrpcode.py and xrpgnuplot.textOutput Files: data.csv and dataplot.csvGraph Image: graph.png file for showing data points
 1. How does your script work?The python script has 4 functions and is responsible for performing small tasks such as sending a request, writing data, and reading the data points. The script starts with startTimer() function where a loop is initiated for calling server_info command at a certain interval using myPeriodicFunction() function. The result set is then written off in a file (data.csv) with comma-separated values. Subsequently, dataManipulation() function is being called for calculating the min, max, and average time and lastly getTimeSeq() is executed for storing data points in a file (dataplot.csv) being used for the gnuplot program.
